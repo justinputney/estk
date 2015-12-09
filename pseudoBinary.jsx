@@ -57,7 +57,7 @@ SourceDocument.prototype.exportAsPseudoBinary = function() {
     if( pos < 0 )
 	    pos = this.fileName.length;
 		
-    var proposedName = this.fileName.substr( 0, pos ) + ".jsx";
+    var proposedName = this.fileName.substr( 0, pos ) + "_bin.jsx";
     var f = File( this.currentFolder );
     f.changePath( proposedName );
     f = f.saveDlg( localize( "$$$/ESToolkit/FileDlg/ExportAsPseudoBinary=Export To Pseudo Binary JavaScript" ),
